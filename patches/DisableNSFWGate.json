@@ -1,0 +1,12 @@
+{
+  "patches": [
+    {
+      "find": "n.default.getCurrentConfig({}).showNsfwGate",
+      "replace": "false"
+    },
+    {
+      "find": "if(!l.showNsfwGate)",
+      "replace": "if(false)"
+    }
+  ]
+}

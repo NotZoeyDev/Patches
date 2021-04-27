@@ -1,0 +1,8 @@
+{
+  "patches": [
+    {
+      "find": "g.window.GLOBAL_ENV.RELEASE_CHANNEL=process.env.RELEASE_CHANNEL",
+      "replace": "g.window.GLOBAL_ENV.RELEASE_CHANNEL='staging'"
+    }
+  ]
+}
