@@ -1,0 +1,20 @@
+{
+  "description": "Add DiscordExtras information inside Discord's settings panel.",
+  "author": "Zoey",
+  "patches": [
+    {
+      "rfind": "this.renderChangeLog\\(\\)",
+      "append": ",this.renderDiscordExtras()"
+    },
+    {
+      "rfind": "this.renderRestorePremium\\(\\)\\)}},",
+      "fappend": 0,
+      "vars": [
+        {
+          "name": "VERSION_NUMBER",
+          "value": "2.0.0"
+        }
+      ]
+    }
+  ]
+}
