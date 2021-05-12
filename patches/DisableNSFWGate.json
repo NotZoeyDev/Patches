@@ -1,4 +1,6 @@
 {
+  "description": "Enable access to NSFW servers on iOS.",
+  "author": "Zoey",
   "patches": [
     {
       "find": "n.default.getCurrentConfig({}).showNsfwGate",

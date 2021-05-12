@@ -1,4 +1,6 @@
 {
+  "description": "Enable staging mode for the app, it'll enable dev mode and let you use experiments.",
+  "author": "Zoey",
   "patches": [
     {
       "find": "g.window.GLOBAL_ENV.RELEASE_CHANNEL=process.env.RELEASE_CHANNEL",
