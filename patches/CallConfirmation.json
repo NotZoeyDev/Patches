@@ -1,15 +1,12 @@
 {
   "description": "Adds a confirmation screen before starting a call in DMs.",
   "author": "Aspen",
+  "modules": {
+    "find": [
+      "e.computeChannelName"
+    ]
+  },
   "patches": [
-    {
-      "find": ",2230,2279",
-      "append": ",979"
-    },
-    {
-      "find": "e.getVoiceChannelKey=S;",
-      "append": "var modCC=r(d[27]);"
-    },
     {
       "find": "o.default.call(n.id,l,u&&!n.isManaged(),s,function(){return T(n)})",
       "freplace": 0
