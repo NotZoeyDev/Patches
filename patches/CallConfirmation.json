@@ -1,4 +1,6 @@
 {
+  "description": "Adds a confirmation screen before starting a call in DMs.",
+  "author": "Aspen",
   "patches": [
     {
       "find": ",2230,2279",
