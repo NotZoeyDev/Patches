@@ -1,0 +1,10 @@
+{
+  "description": "Silences your typing indicator when you type.",
+  "author": "eternal#1000",
+  "patches": [
+    {
+      "rfind": "startTyping:function\\((.?)\\){.*?}\\)}",
+      "replace": "startTyping:function($1){}"
+    }
+  ]
+}
