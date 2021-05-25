@@ -1,14 +1,14 @@
 {
-  "description": "Enable access to NSFW servers on iOS.",
+  "description": "Let's you access NSFW servers on Discord iOS",
   "author": "Zoey",
   "patches": [
     {
-      "find": "n.default.getCurrentConfig({}).showNsfwGate",
+      "rfind": ".\\.default\\.getCurrentConfig\\({}\\)\\.showNsfwGate",
       "replace": "false"
     },
     {
-      "find": "if(!l.showNsfwGate)",
-      "replace": "if(false)"
+      "rfind": "isNSFWGuild=function\\((.*)\\){.*}",
+      "replace": "isNSFWGuild=function($1){return false}}"
     }
   ]
 }
