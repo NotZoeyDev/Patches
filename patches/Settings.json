@@ -8,13 +8,7 @@
     },
     {
       "rfind": "this.renderRestorePremium\\(\\)\\)}},",
-      "fappend": 0,
-      "vars": [
-        {
-          "name": "VERSION_NUMBER",
-          "value": "2.0.0"
-        }
-      ]
+      "fappend": 0
     }
   ]
 }
