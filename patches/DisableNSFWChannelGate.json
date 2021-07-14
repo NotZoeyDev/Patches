@@ -1,0 +1,10 @@
+{
+  "description": "Lets you bypass NSFW Channel gate",
+  "author": "DjDeveloperr",
+  "patches": [
+    {
+      "rfind": "=\\w\\.nsfw_allowed;",
+      "replace": "=true;"
+    }
+  ]
+}
